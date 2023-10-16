@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/day_main"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/day_img"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="25dp"
+        android:layout_width="64dp"
+        android:layout_height="64dp">
+
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/day_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Day"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/white"
+            android:layout_marginHorizontal="30dp"
+            android:textSize="24sp"
+            android:fontFamily="@font/gilroymedium" />
+
+        <TextView
+            android:id="@+id/day_avg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0°C"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:layout_marginHorizontal="25dp"
+            android:fontFamily="@font/gilroymedium" />
+
+    </LinearLayout>
+
+</LinearLayout>

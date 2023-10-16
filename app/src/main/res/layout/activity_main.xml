@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:background="#4c94d9">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tasheknt, Uzbekistan"
+            android:textSize="32sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/gilroymedium"
+            android:layout_marginTop="32dp" />
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:id="@+id/img"
+            android:layout_width="192dp"
+            android:layout_height="192dp"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:id="@+id/main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="32°C"
+            android:textColor="@color/white"
+            android:textSize="78sp"
+            android:fontFamily="@font/gilroymedium"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clean Sky"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:fontFamily="@font/gilroymedium" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/max"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="H: 20°C"
+                android:textColor="@color/white"
+                android:textSize="27sp"
+                android:fontFamily="@font/gilroymedium"
+                android:layout_marginHorizontal="10dp" />
+            <TextView
+                android:id="@+id/min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="L: 20°C"
+                android:textColor="@color/white"
+                android:textSize="27sp"
+                android:fontFamily="@font/gilroymedium"
+                android:layout_marginHorizontal="10dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Today"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:fontFamily="@font/gilroymedium" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/hour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:paddingHorizontal="10dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/day"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="15dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
