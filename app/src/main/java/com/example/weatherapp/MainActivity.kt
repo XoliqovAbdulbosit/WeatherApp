@@ -71,7 +71,7 @@ class MainActivity : AppCompatActivity() {
                 binding.hour.adapter = HourAdapter(hourlist)
                 binding.hour.layoutManager = hour_manager
 
-                for (i in 0..7 step 1) {
+                for (i in 0..daily.length() - 1 step 1) {
                     val day = daily.getJSONObject(i).getString("date")
                     val text = daily.getJSONObject(i).getJSONObject("day").getString("avgtemp_c") + "°C"
                     val img = daily.getJSONObject(i).getJSONObject("day").getJSONObject("condition").getString("icon")
